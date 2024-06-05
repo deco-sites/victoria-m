@@ -2,41 +2,147 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$$$$$0 from "./sections/BlogPosts.tsx";
-import * as $$$$$$$1 from "./sections/Faq.tsx";
-import * as $$$$$$$2 from "./sections/Footer.tsx";
-import * as $$$$$$$3 from "./sections/Header.tsx";
-import * as $$$$$$$9 from "./sections/hero-1.tsx";
-import * as $$$$$$$10 from "./sections/hero-2.tsx";
-import * as $$$$$$$4 from "./sections/Hero.tsx";
-import * as $$$$$$$11 from "./sections/hero2.tsx";
-import * as $$$$$$$5 from "./sections/ImageWithParagraph.tsx";
-import * as $$$$$$$6 from "./sections/Logos.tsx";
-import * as $$$$$$$7 from "./sections/Testimonials.tsx";
-import * as $$$$$$$8 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$$$$0 from "./actions/sendVote.ts";
+import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$2 from "./loaders/availableIcons.ts";
+import * as $$$3 from "./loaders/icons.ts";
+import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
+import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$4 from "./loaders/productLikes.ts";
+import * as $$$5 from "./loaders/votesProduct.ts";
+import * as $$$6 from "./loaders/votesTotal.ts";
+import * as $$$$$$$0 from "./matchers/utm.ts";
+import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
+import * as $$$$$$1 from "./sections/Cards/IconCardsCarousel.tsx";
+import * as $$$$$$2 from "./sections/Cards/IconCardsCarouselWithImage.tsx";
+import * as $$$$$$3 from "./sections/Cards/ImageCardsCarousel.tsx";
+import * as $$$$$$4 from "./sections/Cards/ImageCardsCarouselWithImage.tsx";
+import * as $$$$$$5 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$6 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$7 from "./sections/Category/CategoryList.tsx";
+import * as $$$$$$8 from "./sections/Content/Benefits.tsx";
+import * as $$$$$$9 from "./sections/Content/BlogPosts.tsx";
+import * as $$$$$$10 from "./sections/Content/CallToAction.tsx";
+import * as $$$$$$11 from "./sections/Content/Faq.tsx";
+import * as $$$$$$12 from "./sections/Content/Features.tsx";
+import * as $$$$$$13 from "./sections/Content/Hero.tsx";
+import * as $$$$$$14 from "./sections/Content/ImageSection.tsx";
+import * as $$$$$$15 from "./sections/Content/Intro.tsx";
+import * as $$$$$$16 from "./sections/Content/Logos.tsx";
+import * as $$$$$$17 from "./sections/Content/Partners.tsx";
+import * as $$$$$$18 from "./sections/Content/RichText.tsx";
+import * as $$$$$$19 from "./sections/Content/Table.tsx";
+import * as $$$$$$20 from "./sections/Content/Testimonials.tsx";
+import * as $$$$$$21 from "./sections/Content/TextWithImage.tsx";
+import * as $$$$$$22 from "./sections/Footer/Footer.tsx";
+import * as $$$$$$23 from "./sections/Gallery.tsx";
+import * as $$$$$$24 from "./sections/Header/Header.tsx";
+import * as $$$$$$25 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$26 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$27 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$28 from "./sections/Images/PartialImageGallery.tsx";
+import * as $$$$$$29 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$30 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$31 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$32 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$33 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$34 from "./sections/Miscellaneous/Cupom.tsx";
+import * as $$$$$$35 from "./sections/Miscellaneous/Slide.tsx";
+import * as $$$$$$36 from "./sections/Miscellaneous/Temperature.tsx";
+import * as $$$$$$37 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$38 from "./sections/Product/HorizontalProductCard.tsx";
+import * as $$$$$$39 from "./sections/Product/ImageGalleryFrontBack.tsx";
+import * as $$$$$$40 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$41 from "./sections/Product/NotFoundChallenge.tsx";
+import * as $$$$$$42 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$43 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$44 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$45 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$46 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$47 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$48 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$49 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$50 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "deco-sites/victoria-m/loaders/availableIcons.ts": $$$2,
+    "deco-sites/victoria-m/loaders/icons.ts": $$$3,
+    "deco-sites/victoria-m/loaders/Layouts/ProductCard.tsx": $$$0,
+    "deco-sites/victoria-m/loaders/List/Sections.tsx": $$$1,
+    "deco-sites/victoria-m/loaders/productLikes.ts": $$$4,
+    "deco-sites/victoria-m/loaders/votesProduct.ts": $$$5,
+    "deco-sites/victoria-m/loaders/votesTotal.ts": $$$6,
+  },
   "sections": {
-    "site/sections/BlogPosts.tsx": $$$$$$$0,
-    "site/sections/Faq.tsx": $$$$$$$1,
-    "site/sections/Footer.tsx": $$$$$$$2,
-    "site/sections/Header.tsx": $$$$$$$3,
-    "site/sections/hero-1.tsx": $$$$$$$9,
-    "site/sections/hero-2.tsx": $$$$$$$10,
-    "site/sections/Hero.tsx": $$$$$$$4,
-    "site/sections/hero2.tsx": $$$$$$$11,
-    "site/sections/ImageWithParagraph.tsx": $$$$$$$5,
-    "site/sections/Logos.tsx": $$$$$$$6,
-    "site/sections/Testimonials.tsx": $$$$$$$7,
-    "site/sections/Theme/Theme.tsx": $$$$$$$8,
+    "deco-sites/victoria-m/sections/Animation/Animation.tsx": $$$$$$0,
+    "deco-sites/victoria-m/sections/Cards/IconCardsCarousel.tsx": $$$$$$1,
+    "deco-sites/victoria-m/sections/Cards/IconCardsCarouselWithImage.tsx":
+      $$$$$$2,
+    "deco-sites/victoria-m/sections/Cards/ImageCardsCarousel.tsx": $$$$$$3,
+    "deco-sites/victoria-m/sections/Cards/ImageCardsCarouselWithImage.tsx":
+      $$$$$$4,
+    "deco-sites/victoria-m/sections/Category/CategoryBanner.tsx": $$$$$$5,
+    "deco-sites/victoria-m/sections/Category/CategoryGrid.tsx": $$$$$$6,
+    "deco-sites/victoria-m/sections/Category/CategoryList.tsx": $$$$$$7,
+    "deco-sites/victoria-m/sections/Content/Benefits.tsx": $$$$$$8,
+    "deco-sites/victoria-m/sections/Content/BlogPosts.tsx": $$$$$$9,
+    "deco-sites/victoria-m/sections/Content/CallToAction.tsx": $$$$$$10,
+    "deco-sites/victoria-m/sections/Content/Faq.tsx": $$$$$$11,
+    "deco-sites/victoria-m/sections/Content/Features.tsx": $$$$$$12,
+    "deco-sites/victoria-m/sections/Content/Hero.tsx": $$$$$$13,
+    "deco-sites/victoria-m/sections/Content/ImageSection.tsx": $$$$$$14,
+    "deco-sites/victoria-m/sections/Content/Intro.tsx": $$$$$$15,
+    "deco-sites/victoria-m/sections/Content/Logos.tsx": $$$$$$16,
+    "deco-sites/victoria-m/sections/Content/Partners.tsx": $$$$$$17,
+    "deco-sites/victoria-m/sections/Content/RichText.tsx": $$$$$$18,
+    "deco-sites/victoria-m/sections/Content/Table.tsx": $$$$$$19,
+    "deco-sites/victoria-m/sections/Content/Testimonials.tsx": $$$$$$20,
+    "deco-sites/victoria-m/sections/Content/TextWithImage.tsx": $$$$$$21,
+    "deco-sites/victoria-m/sections/Footer/Footer.tsx": $$$$$$22,
+    "deco-sites/victoria-m/sections/Gallery.tsx": $$$$$$23,
+    "deco-sites/victoria-m/sections/Header/Header.tsx": $$$$$$24,
+    "deco-sites/victoria-m/sections/Images/BannerGrid.tsx": $$$$$$25,
+    "deco-sites/victoria-m/sections/Images/Carousel.tsx": $$$$$$26,
+    "deco-sites/victoria-m/sections/Images/ImageGallery.tsx": $$$$$$27,
+    "deco-sites/victoria-m/sections/Images/PartialImageGallery.tsx": $$$$$$28,
+    "deco-sites/victoria-m/sections/Images/ShoppableBanner.tsx": $$$$$$29,
+    "deco-sites/victoria-m/sections/Links/LinkTree.tsx": $$$$$$30,
+    "deco-sites/victoria-m/sections/Links/Shortcuts.tsx": $$$$$$31,
+    "deco-sites/victoria-m/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$32,
+    "deco-sites/victoria-m/sections/Miscellaneous/CookieConsent.tsx": $$$$$$33,
+    "deco-sites/victoria-m/sections/Miscellaneous/Cupom.tsx": $$$$$$34,
+    "deco-sites/victoria-m/sections/Miscellaneous/Slide.tsx": $$$$$$35,
+    "deco-sites/victoria-m/sections/Miscellaneous/Temperature.tsx": $$$$$$36,
+    "deco-sites/victoria-m/sections/Newsletter/Newsletter.tsx": $$$$$$37,
+    "deco-sites/victoria-m/sections/Product/HorizontalProductCard.tsx":
+      $$$$$$38,
+    "deco-sites/victoria-m/sections/Product/ImageGalleryFrontBack.tsx":
+      $$$$$$39,
+    "deco-sites/victoria-m/sections/Product/NotFound.tsx": $$$$$$40,
+    "deco-sites/victoria-m/sections/Product/NotFoundChallenge.tsx": $$$$$$41,
+    "deco-sites/victoria-m/sections/Product/ProductDetails.tsx": $$$$$$42,
+    "deco-sites/victoria-m/sections/Product/ProductShelf.tsx": $$$$$$43,
+    "deco-sites/victoria-m/sections/Product/ProductShelfTabbed.tsx": $$$$$$44,
+    "deco-sites/victoria-m/sections/Product/SearchResult.tsx": $$$$$$45,
+    "deco-sites/victoria-m/sections/Product/ShelfWithImage.tsx": $$$$$$46,
+    "deco-sites/victoria-m/sections/Product/Wishlist.tsx": $$$$$$47,
+    "deco-sites/victoria-m/sections/Social/InstagramPosts.tsx": $$$$$$48,
+    "deco-sites/victoria-m/sections/Social/WhatsApp.tsx": $$$$$$49,
+    "deco-sites/victoria-m/sections/Theme/Theme.tsx": $$$$$$50,
+  },
+  "matchers": {
+    "deco-sites/victoria-m/matchers/utm.ts": $$$$$$$0,
+  },
+  "actions": {
+    "deco-sites/victoria-m/actions/sendVote.ts": $$$$$$$$$0,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$$1,
+    "deco-sites/victoria-m/apps/decohub.ts": $$$$$$$$$$$0,
+    "deco-sites/victoria-m/apps/site.ts": $$$$$$$$$$$1,
   },
-  "name": "site",
+  "name": "deco-sites/victoria-m",
   "baseUrl": import.meta.url,
 };
 

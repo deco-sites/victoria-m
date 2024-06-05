@@ -3,13 +3,18 @@ import { defineApp } from "$fresh/server.ts";
 import { Context } from "deco/deco.ts";
 import Theme from "../sections/Theme/Theme.tsx";
 
+const sw = () =>
+  addEventListener("load", () =>
+    navigator && navigator.serviceWorker &&
+    navigator.serviceWorker.register("/sw.js"));
+
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
 
   return (
     <>
       {/* Include default fonts and css vars */}
-      <Theme colorScheme="any" />
+      <Theme />
 
       {/* Include Icons and manifest */}
       <Head>
@@ -28,6 +33,12 @@ export default defineApp(async (_req, ctx) => {
 
       {/* Rest of Preact tree */}
       <ctx.Component />
+
+      {/* Include service worker */}
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
+      />
     </>
   );
 });
