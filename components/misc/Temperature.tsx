@@ -14,7 +14,6 @@ export interface Props {
 }
 
 const Temperature = ({ temperature, location }: Props) => {
-
   return (
     <>
       <div class="px-4 mt-2 fixed p-1 rounded-lg bottom-3 left-3 bg-gray-600 text-white shadow-sm">
@@ -22,6 +21,6 @@ const Temperature = ({ temperature, location }: Props) => {
       </div>
     </>
   );
-}
+};
 
 export default Temperature;

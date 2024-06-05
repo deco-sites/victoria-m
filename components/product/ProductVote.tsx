@@ -19,10 +19,12 @@ export default function ProductVote({ productId }: Props) {
 
   useSignalEffect(() => {
     const getVotes = async () => {
-      const votesTotalProduct = await invoke["deco-sites/victoria-m"].loaders.votesProduct({ productId });
+      const votesTotalProduct = await invoke["deco-sites/victoria-m"].loaders
+        .votesProduct({ productId });
       productVotes.value = votesTotalProduct.product;
 
-      const votesTotal = await invoke["deco-sites/victoria-m"].loaders.votesTotal();
+      const votesTotal = await invoke["deco-sites/victoria-m"].loaders
+        .votesTotal();
       sumVotes.value = votesTotal.total;
     };
 
@@ -40,7 +42,7 @@ export default function ProductVote({ productId }: Props) {
       sumVotes.value = vote.total;
       productVotes.value = vote.product;
 
-      toast.success('Obrigado por votar!', {
+      toast.success("Obrigado por votar!", {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -67,11 +69,17 @@ export default function ProductVote({ productId }: Props) {
       <ToastContainerComponent />
       <button onClick={addVote}>
         {hasVoted.value
-          ? <Icon id="IconMoodCheck" class="text-emerald-600" width={24} height={24} />
+          ? (
+            <Icon
+              id="IconMoodCheck"
+              class="text-emerald-600"
+              width={24}
+              height={24}
+            />
+          )
           : <Icon id="IconMoodSmile" width={24} height={24} />}
       </button>
       <p class="text-lg">{productVotes.value}</p>
-
     </div>
   );
 }

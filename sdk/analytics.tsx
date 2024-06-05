@@ -7,7 +7,7 @@ interface ScoreParams {
 }
 
 interface ScoreEvent extends IEvent<ScoreParams> {
-  name: "post_score"
+  name: "post_score";
 }
 
 export const sendEvent = <E extends AnalyticsEvent | ScoreEvent>(event: E) => {

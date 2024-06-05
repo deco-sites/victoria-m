@@ -20,7 +20,8 @@ export function HorizontalProductCard({ product, imageAnimate }: Props) {
     <div class="flex flex-col w-full md:flex-row mt-3 gap-4 border border-slate-200 rounded-lg px-8">
       <div class="overflow-hidden w-52 h-72 flex items-center">
         <Image
-          src={product?.image?.at(0)?.url || `https://placehold.co/${WIDTH}x${HEIGHT}`}
+          src={product?.image?.at(0)?.url ||
+            `https://placehold.co/${WIDTH}x${HEIGHT}`}
           width={WIDTH}
           height={HEIGHT}
           class={`my-auto ${imageAnimate ? "hover:scale-125" : ""}`}
@@ -55,4 +56,4 @@ export function HorizontalProductCard({ product, imageAnimate }: Props) {
       </div>
     </div>
   );
-};
+}
